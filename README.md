@@ -28,6 +28,46 @@ Usa autenticação por login
 
 Está exposta via internet (Google Colab, APIs, etc.)
 
+🔎 O que o Agente Analisa
+
+Imagem da arquitetura (.png)
+
+Descrição da aplicação
+
+Tipos de autenticação
+
+Exposição à internet
+
+Uso de dados sensíveis
+
+Com base nisso, a IA gera um relatório em JSON contendo:
+
+Lista de ameaças STRIDE detalhadas (Spoofing, Tampering, etc.)
+
+Sugestões para melhorar a análise em iterações futuras.
+
+Ameaças geradas (exemplo simplificado):
+
+{
+  "threat_model": [
+    {
+      "Threat Type": "Information Disclosure",
+      "Scenario": "Dados faciais armazenados sem criptografia forte podem ser extraídos por acesso não autorizado ao banco",
+      "Potential Impact": "Exposição de dados biométricos dos usuários"
+    },
+    {
+      "Threat Type": "Spoofing",
+      "Scenario": "Login baseado apenas em ID pode ser falsificado via engenharia social ou interceptação de requisições",
+      "Potential Impact": "Acesso não autorizado à aplicação"
+    }
+  ],
+  "improvement_suggestions": [
+    "Descrever como as imagens faciais são protegidas durante o upload e armazenamento",
+    "Explicar o fluxo de autenticação detalhado entre componentes"
+  ]
+}
+
+
   
 
 
