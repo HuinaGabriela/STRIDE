@@ -48,6 +48,7 @@ Sugestões para melhorar a análise em iterações futuras.
 
 Ameaças geradas (exemplo simplificado):
 
+```
 {
   "threat_model": [
     {
@@ -66,6 +67,7 @@ Ameaças geradas (exemplo simplificado):
     "Explicar o fluxo de autenticação detalhado entre componentes"
   ]
 }
+```
 
 
   
